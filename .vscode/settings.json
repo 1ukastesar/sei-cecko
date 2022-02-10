@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "*.rsc": "ini",
+        "stdio.h": "c",
+        "cstdio": "c",
+        "limits": "c"
+    },
+    "C_Cpp.errorSquiggles": "Disabled",
+    "cmake.configureOnOpen": false
+}
