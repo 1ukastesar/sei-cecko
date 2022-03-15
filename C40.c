@@ -1,0 +1,20 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+#include "pause.c"
+
+#define MAX_CHARS_IN_LINE 80
+
+int main() {
+    
+    char line[MAX_CHARS_IN_LINE + 1];
+
+    FILE *fr;
+    fr = fopen("files/dopis.dat", "r");
+
+    while(fgets(line, MAX_CHARS_IN_LINE, fr) != NULL) {
+        printf(line);
+    }
+
+    pause();
+}
