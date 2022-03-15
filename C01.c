@@ -2,6 +2,8 @@
 #include<stdlib.h>
 #include<math.h>
 
+#include "pause.c"
+
 int main(){
     int strana;
     double na2,na3;
@@ -22,6 +24,5 @@ int main(){
     printf("Delka stenove uhlopricky: %f\n",us);
     printf("Delka telesove uhlopricky: %f\n",ut);
 
-    printf("\n");
-    system("PAUSE");
+    pause();
 }
