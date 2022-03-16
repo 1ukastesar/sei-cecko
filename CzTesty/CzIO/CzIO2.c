@@ -1,6 +1,8 @@
 #include<stdio.h>
 #include<stdlib.h>
 
+#include "pause.c"
+
 int main() {
 
     FILE *fr;
@@ -52,8 +54,6 @@ int main() {
     printf("u, U: %i\n", u);
     printf("y, Y: %i\n", y);
 
-    printf("\n");
-
     fclose(fr);
-    system("PAUSE");
+    pause();
 }

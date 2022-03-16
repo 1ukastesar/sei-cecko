@@ -1,6 +1,8 @@
 #include<stdio.h>
 #include<stdlib.h>
 
+#include "pause.c"
+
 int main() {
 
     int n = 10;
@@ -22,7 +24,6 @@ int main() {
     printf("min = %i\n", min);
     printf("max - min = %i\n", max-min);
 
-    printf("\n\n");
-    system("PAUSE");
+    pause();
 
 }

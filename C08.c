@@ -2,6 +2,8 @@
 #include<stdlib.h>
 #include<string.h>
 
+#include "pause.c"
+
 int main () {
     int monthnum;
     char month[9];
@@ -64,7 +66,5 @@ int main () {
     else
         printf("Cislo neodpovida zadnemu mesici.");
 
-    printf("\n\n");
-    
-    system("PAUSE");
+    pause();
 }

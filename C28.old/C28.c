@@ -1,6 +1,8 @@
 #include<stdio.h>
 #include<stdlib.h>
 
+#include "pause.c"
+
 int main() {
 
     FILE *fr;
@@ -45,5 +47,5 @@ int main() {
 
     // a provedu cistici prace (zavru soubor).
     fclose(fr);
-    system("PAUSE");
+    pause();
 }

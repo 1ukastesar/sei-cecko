@@ -1,6 +1,8 @@
 #include<stdio.h>
 #include<stdlib.h>
 
+#include "pause.c"
+
 int main() {
 
     int a,b,c,next = 0,prev;
@@ -47,7 +49,5 @@ int main() {
 
     printf(".");
 
-    printf("\n\n");
-    
-    system("PAUSE");
+    pause();
 }

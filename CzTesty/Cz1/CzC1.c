@@ -1,6 +1,8 @@
 #include<stdio.h>
 #include<stdlib.h>
 
+#include "pause.c"
+
 int main() {
 
     int next;
@@ -28,7 +30,5 @@ int main() {
     printf("\n");
     printf("Pocet zapornych cisel je %i a jejich soucet je %i.",totalNeg,negSum);
 
-    printf("\n\n");
-    
-    system("PAUSE");
+    pause();
 }

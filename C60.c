@@ -1,6 +1,8 @@
 #include<stdio.h>
 #include<stdlib.h>
 
+#include "pause.c"
+
 int main() {
     
     int v, n;
@@ -33,6 +35,6 @@ int main() {
     } else {
         printf("Prvek nenalezen.");
     }    
-    printf("\n\n");
-    system("PAUSE");
+
+    pause();
 }

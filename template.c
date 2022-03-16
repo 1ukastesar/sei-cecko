@@ -5,6 +5,5 @@ int main() {
     
     
 
-    printf("\n\n");
-    system("PAUSE");
+    pause();
 }

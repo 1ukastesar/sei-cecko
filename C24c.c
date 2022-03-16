@@ -1,6 +1,8 @@
 #include<stdio.h>
 #include<stdlib.h>
 
+#include "pause.c"
+
 int main() {
 
     int x,y,z;
@@ -16,5 +18,5 @@ int main() {
     fclose(fr);
     fclose(fw);
 
-    system("PAUSE");
+    pause();
 }

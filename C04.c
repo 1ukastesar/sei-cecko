@@ -2,6 +2,8 @@
 #include<stdlib.h>
 #include<math.h>
 
+#include "pause.c"
+
 int main(){
     int a,b,c;
     int a2,b2,c2;
@@ -30,7 +32,7 @@ int main(){
     else
         printf("neni");
     
-    printf(" pravouhly.\n\n");
+    printf(" pravouhly.");
 
-    system("PAUSE");
+    pause();
 }

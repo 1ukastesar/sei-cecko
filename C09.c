@@ -2,6 +2,8 @@
 #include<stdlib.h>
 #include<string.h>
 
+#include "pause.c"
+
 int main() {
     char str[6];
 
@@ -24,7 +26,5 @@ int main() {
 
     printf(str);
 
-    printf("\n\n");
-    
-    system("PAUSE");
+    pause();
 }

@@ -1,6 +1,8 @@
 #include<stdio.h>
 #include<stdlib.h>
 
+#include "pause.c"
+
 int main() {
 
     FILE *fr;
@@ -55,5 +57,5 @@ int main() {
     printf("Cislice: %i\n", digits);
     printf("Ostatni znaky: %i\n", other);
 
-    system("PAUSE");
+    pause();
 }

@@ -1,6 +1,8 @@
 #include<stdio.h>
 #include<stdlib.h>
 
+#include "pause.c"
+
 int main() {
     
     int n;
@@ -16,7 +18,5 @@ int main() {
 
     printf("n! = %i",nf);
 
-    printf("\n\n");
-    
-    system("PAUSE");
+    pause();
 }

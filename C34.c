@@ -2,6 +2,8 @@
 #include<stdlib.h>
 #include<math.h>
 
+#include "pause.c"
+
 float vstup();
 void vypocet(float r, float *p_o, float *p_S);
 void vystup(float o, float S);
@@ -14,8 +16,7 @@ int main() {
     vypocet(r, &o, &S);
     vystup(o, S);
 
-    printf("\n\n");
-    system("PAUSE");
+    pause();
 }
 
 float vstup() {

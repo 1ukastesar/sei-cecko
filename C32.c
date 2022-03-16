@@ -1,6 +1,8 @@
 #include<stdio.h>
 #include<stdlib.h>
 
+#include "pause.c"
+
 int vstup();
 int obvod(int a);
 int obsah(int a);
@@ -15,8 +17,7 @@ int main() {
     S = obsah(a);
     vystup(o, S);
 
-    printf("\n\n");
-    system("PAUSE");
+    pause();
 }
 
 int vstup() {

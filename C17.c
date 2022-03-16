@@ -1,6 +1,8 @@
 #include<stdio.h>
 #include<stdlib.h>
 
+#include "pause.c"
+
 int main() {
     float prumer;
     int pocet,a,suma;
@@ -24,7 +26,5 @@ int main() {
     
     printf("Prumer zadanych cisel = %6.2f",prumer);
 
-    printf("\n\n");
-
-    system("PAUSE");
+    pause();
 }

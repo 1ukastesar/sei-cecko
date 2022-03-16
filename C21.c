@@ -1,6 +1,8 @@
 #include<stdio.h>
 #include<stdlib.h>
 
+#include "pause.c"
+
 int main() {
     
     int n;
@@ -19,7 +21,5 @@ int main() {
 
     printf("%i^2 = %i",n,mocnina);
 
-    printf("\n\n");
-    
-    system("PAUSE");
+    pause();
 }

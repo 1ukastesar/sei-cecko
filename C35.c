@@ -1,6 +1,8 @@
 #include<stdio.h>
 #include<stdlib.h>
 
+#include "pause.c"
+
 int vstup();
 void vypocet(int a, int *p_o, int *p_S);
 void vystup(int o, int S);
@@ -14,8 +16,7 @@ int main() {
     vystup(o, S);
     
 
-    printf("\n\n");
-    system("PAUSE");
+    pause();
 }
 
 int vstup() {

@@ -2,6 +2,8 @@
 #include<stdlib.h>
 #include<math.h>
 
+#include "pause.c"
+
 int main(){
     int a,b,c;
 
@@ -25,7 +27,7 @@ int main(){
     else
         printf("neexistuje");
     
-    printf(".\n\n");
+    printf(".");
 
-    system("PAUSE");
+    pause();
 }

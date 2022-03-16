@@ -1,6 +1,8 @@
 #include<stdio.h>
 #include<stdlib.h>
 
+#include "pause.c"
+
 int faktorial(int n);
 
 int main() {
@@ -13,9 +15,7 @@ int main() {
     nF = faktorial(n);
     printf("n! = %i", nF);
 
-    printf("\n\n");
-    
-    system("PAUSE");
+    pause();
 }
 
 int faktorial(int n) {

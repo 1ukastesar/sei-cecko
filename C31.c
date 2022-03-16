@@ -1,6 +1,8 @@
 #include<stdio.h>
 #include<stdlib.h>
 
+#include "pause.c"
+
 int vstup(void);
 int mocnina2(int x);
 int mocnina3(int x);
@@ -18,8 +20,7 @@ int main() {
     printf("x^3 = %i\n", x3);
     porovnani(x2, x3);
 
-    printf("\n\n");
-    system("PAUSE");
+    pause();
 }
 
 int vstup(void) {

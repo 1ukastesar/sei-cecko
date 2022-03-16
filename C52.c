@@ -1,6 +1,8 @@
 #include<stdio.h>
 #include<stdlib.h>
 
+#include "pause.c"
+
 int main() {
     
     int n = 5,
@@ -32,6 +34,5 @@ int main() {
     printf("Soucet nad diagonalou: %i\n", sum_a);
     printf("Soucet pod diagonalou: %i\n", sum_b);
 
-    printf("\n");
-    system("PAUSE");
+    pause();
 }

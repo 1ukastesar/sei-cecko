@@ -1,6 +1,8 @@
 #include<stdio.h>
 #include<stdlib.h>
 
+#include "pause.c"
+
 int main() {
 
     int a,b,c,shoda = 0;
@@ -28,7 +30,5 @@ int main() {
     
     printf("Pocet shodnych cisel je %i",shoda);
 
-    printf("\n\n");
-    
-    system("PAUSE");
+    pause();
 }

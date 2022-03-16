@@ -1,6 +1,8 @@
 #include<stdio.h>
 #include<stdlib.h>
 
+#include "pause.c"
+
 int main() {
     
     int vzor,vyskyt=0,n=1,i=0;
@@ -28,7 +30,5 @@ int main() {
         printf("Celkovy pocet vyskytu: %i",vyskyt);
     }
 
-    printf("\n\n");
-    
-    system("PAUSE");
+    pause();
 }

@@ -1,6 +1,8 @@
 #include<stdio.h>
 #include<stdlib.h>
 
+#include "pause.c"
+
 int main(){
     int a,b,c;
 
@@ -26,7 +28,7 @@ int main(){
     else
         printf("obecny");
     
-    printf(".\n\n");
+    printf(".");
 
-    system("PAUSE");
+    pause();
 }

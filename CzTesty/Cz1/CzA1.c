@@ -1,6 +1,8 @@
 #include<stdio.h>
 #include<stdlib.h>
 
+#include "pause.c"
+
 int main() {
 
     int i = 0,n,next,odd,sum = 0;
@@ -40,7 +42,7 @@ int main() {
     else {
         printf("\n");
         printf("Vstupni znak byl nula.\n");
-        system("PAUSE");
+        pause();
         exit(0);
     }
 
@@ -54,7 +56,5 @@ int main() {
     printf("%i",sum);
     printf(".");
 
-    printf("\n\n");
-    
-    system("PAUSE");
+    pause();
 }

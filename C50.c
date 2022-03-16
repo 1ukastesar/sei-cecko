@@ -1,6 +1,8 @@
 #include<stdio.h>
 #include<stdlib.h>
 
+#include "pause.c"
+
 int main() {
     
     int r = 5;
@@ -24,6 +26,5 @@ int main() {
         printf("sum%i = %i\n", i + 1, sum);
     }
 
-    printf("\n");
-    system("PAUSE");
+    pause();
 }

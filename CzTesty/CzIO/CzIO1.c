@@ -1,6 +1,8 @@
 #include<stdio.h>
 #include<stdlib.h>
 
+#include "pause.c"
+
 int main() {
 
     FILE *fw;
@@ -21,7 +23,6 @@ int main() {
     fw = fopen("vystup.txt", "w");
     fprintf(fw, "%i",V);
     
-    printf("\n");
     fclose(fw);
-    system("PAUSE");
+    pause();
 }

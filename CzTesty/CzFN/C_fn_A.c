@@ -2,6 +2,8 @@
 #include<stdlib.h>
 #include<math.h>
 
+#include "pause.c"
+
 int vstup(void);
 float kruh(int r);
 int ctverec(int a);
@@ -19,9 +21,7 @@ int main() {
     c = rozdil(oKruhu, (float)oCtverce);
     vystup(oKruhu, oCtverce, c);
 
-    printf("\n\n");
-    
-    system("PAUSE");
+    pause();
 }
 
 int vstup(void) {

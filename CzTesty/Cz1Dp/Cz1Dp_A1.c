@@ -1,6 +1,8 @@
 #include<stdio.h>
 #include<stdlib.h>
 
+#include "pause.c"
+
 int main() {
     
     int n = 20;
@@ -29,6 +31,5 @@ int main() {
         printf("%i ", b[i]);
     }
 
-    printf("\n\n");
-    system("PAUSE");
+    pause();
 }

@@ -1,5 +1,7 @@
-#include <stdio.h>
+#include<stdio.h>
 #include<stdlib.h>
+
+#include "pause.c"
 
 int main()
 {
@@ -26,7 +28,6 @@ int main()
 		printf("%i:\t%i\n",d,o);
 	}
 	
-	printf("\n\n");
-	system("PAUSE");
+	pause();
 }
 

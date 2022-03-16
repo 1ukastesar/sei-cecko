@@ -1,6 +1,8 @@
 #include<stdio.h>
 #include<stdlib.h>
 
+#include "pause.c"
+
 int main() {
     
     int n;
@@ -17,7 +19,5 @@ int main() {
 
     printf("Soucet prvnich n prirozenych cisel je %i.",r);
 
-    printf("\n\n");
-    
-    system("PAUSE");
+    pause();
 }

@@ -1,6 +1,8 @@
 #include<stdio.h>
 #include<stdlib.h>
 
+#include "pause.c"
+
 int max2(int a, int b);
 int max3(int a, int b, int c);
 
@@ -25,9 +27,7 @@ int main() {
     printf("\n\n"); 
     printf("max = %i", maxCelk);
 
-    printf("\n\n");
-    
-    system("PAUSE");
+    pause();
 }
 
 int max2(int a, int b) {

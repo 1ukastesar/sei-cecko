@@ -2,6 +2,8 @@
 #include<stdlib.h>
 #include<math.h>
 
+#include "pause.c"
+
 int main() {
     double a,b,c,d;
 
@@ -36,7 +38,5 @@ int main() {
         printf("Rovnice nema reseni.");
     }
 
-    printf("\n\n");
-
-    system("PAUSE");
+    pause();
 }

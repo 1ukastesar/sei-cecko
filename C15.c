@@ -1,6 +1,8 @@
 #include<stdio.h>
 #include<stdlib.h>
 
+#include "pause.c"
+
 int main() {
     int a,suma;
     suma=0;
@@ -17,7 +19,5 @@ int main() {
 
     printf("Soucet kladnych cisel = %i",suma);
 
-    printf("\n\n");
-
-    system("PAUSE");
+    pause();
 }

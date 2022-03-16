@@ -1,6 +1,8 @@
 #include<stdio.h>
 #include<stdlib.h>
 
+#include "pause.c"
+
 int main() {
     
     int a,b;
@@ -31,7 +33,5 @@ int main() {
         printf("Nulou nelze delit!");
     }
 
-    printf("\n\n");
-    
-    system("PAUSE");
+    pause();
 }

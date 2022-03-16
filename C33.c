@@ -1,6 +1,8 @@
 #include<stdio.h>
 #include<stdlib.h>
 
+#include "pause.c"
+
 int obsah(int x, int y);
 int soucet(int x, int y, int z);
 void zobraz(int S1, int S2, int S3, int S);
@@ -21,8 +23,7 @@ int main() {
     S = soucet(S1, S2, S3);
     zobraz(S1, S2, S3, S);
 
-    printf("\n\n");
-    system("PAUSE");
+    pause();
 }
 
 int obsah(int x, int y) {

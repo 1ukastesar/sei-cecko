@@ -1,6 +1,8 @@
 #include<stdio.h>
 #include<stdlib.h>
 
+#include "pause.c"
+
 int main() {
 
     int a,b,c,max;
@@ -27,7 +29,5 @@ int main() {
         
     printf("max = %i",max);
 
-    printf("\n\n");
-    
-    system("PAUSE");
+    pause();
 }

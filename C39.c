@@ -1,6 +1,8 @@
 #include<stdio.h>
 #include<stdlib.h>
 
+#include "pause.c"
+
 int main() {
 
     int n = 4;
@@ -29,6 +31,5 @@ int main() {
     else
         printf("Vektory nejsou kolme, skalarni soucin je %i.", scal);
     
-    printf("\n\n");
-    system("PAUSE");
+    pause();
 }
