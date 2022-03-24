@@ -19,12 +19,12 @@ int main() {
     printf("\nRetezce ");
 
     if(strcmp(s1, s2) == 0) {
-        printf("jsou shodne a maji delku ");
-        printf("%i", strlen(s1));
+        printf(  "jsou shodne a maji delku ");
+        printf("%i",    strlen(s1));
     } else {
         printf("nejsou shodne a maji delku ");
         printf("%i a ", strlen(s1));
-        printf("%i", strlen(s2));
+        printf("%i",    strlen(s2));
     }
 
     printf(".");
