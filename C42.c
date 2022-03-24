@@ -4,13 +4,15 @@
 
 #include "pause.c"
 
+#define STR_MAX_LEN 20
+
 int main() {
     
     int max_len = 10;
-    char s1[max_len];
-    char s2[max_len];
+    char s1[STR_MAX_LEN];
+    char s2[STR_MAX_LEN];
 
-    printf("Zadejte dva retezce o maximalni delce %i oddelene \\n: \n", max_len);
+    printf("Zadejte dva retezce o maximalni delce %i oddelene ENTERem: \n", STR_MAX_LEN);
     scanf("%s", s1);
     scanf("%s", s2);
 
