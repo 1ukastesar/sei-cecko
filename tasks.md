@@ -43,7 +43,7 @@
 41. Napište program, který naplní tři textové řetězce, spojí je do jednoho řetězce a ten vypíše na monitor&period;
 42. Napište program, který rozhodne, zda 2 zadané řetězce (každý má maximálně 20 znaků) jsou shodné nebo ne&period; V případě, že ano, zobrazte délku libovolného z nich&period; V případě, že ne, zobrazte délky každého z textů&period;
 43. Naplňte řetězce s1, s2, s3 postupně třemi různými libovolnými jmény bez prázdných znaků a diakritiky, každý v maximální délce 10 znaků&period; Na výstup zobrazte tyto řetězce seřazené lexikograficky vzestupně&period;
-44. Napište program, který převede znak na ASCII hodnotu a naopak ACSII hodnotu znaku na znak&period;
+44. Napište program, který převede znak na ASCII hodnotu a naopak ASCII hodnotu znaku na znak&period;
 45. Napište program, který pro zadaný textový řetězec stanoví, kolik je v něm samohlásek, souhlásek, číslic a ostatních znaků&period;
 46. Napište program, který vstupní textový řetězec na základě zadaného posunu zašifruje Cesarovou šifrou (zadané znaky posune v ASCII tabulce o příslušný počet znaků)&period; Pak zašifrovaný řetězec opět dešifruje&period; Na výstup zobrazí původní řetězec, zašifrovaný řetězec a dešifrovaný řetězec&period;
 47. Napište program, který naplní dvourozměrné pole (5 řádků a 4 sloupce) celočíselnými hodnotami zadanými z klávesnice a na monitor vypíše největší prvek tohoto pole&period;
