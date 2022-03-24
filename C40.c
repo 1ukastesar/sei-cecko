@@ -7,7 +7,7 @@
 
 int main() {
     
-    char line[MAX_CHARS_IN_LINE + 1];
+    char line[MAX_CHARS_IN_LINE];
 
     FILE *fr;
     fr = fopen("files/dopis.dat", "r");

@@ -4,7 +4,7 @@
 
 #include "pause.c"
 
-#define RESULT_MAX_LEN 30
+#define RESULT_MAX_LEN 30+1
 
 int main() {
 

@@ -4,7 +4,7 @@
 
 #include "pause.c"
 
-#define STR_MAX_LEN 20
+#define STR_MAX_LEN 20+1
 
 int main() {
     
