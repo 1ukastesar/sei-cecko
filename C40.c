@@ -3,7 +3,7 @@
 
 #include "pause.c"
 
-#define MAX_CHARS_IN_LINE 80
+#define MAX_CHARS_IN_LINE 80+1
 
 int main() {
     
