@@ -1,6 +1,5 @@
 {
     "files.associations": {
-        "*.rsc": "ini",
         "stdio.h": "c",
         "cstdio": "c",
         "limits": "c"
