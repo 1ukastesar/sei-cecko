@@ -7,22 +7,22 @@
 
 #define STR_MAX_LEN 100+1
 
-char * shift_by(char message[], int shift) {
+char * strshift(char string[], int shift) {
     char * result;
     result = malloc(STR_MAX_LEN);
 
     int i;
 
-    for (i = 0; message[i] != '\0'; i++) 
+    for (i = 0; string[i] != '\0'; i++) 
     {
 
-        if (isupper(message[i]))
+        if (isupper(string[i]))
         {
-            result[i] = (message[i] + shift - 'a') % 26 + 'a';
+            result[i] = (string[i] + shift - 'a') % 26 + 'a';
         }
-        else if (islower(message[i]))
+        else if (islower(string[i]))
         {
-            result[i] = (message[i] + shift - 'a') % 26 + 'a';
+            result[i] = (string[i] + shift - 'a') % 26 + 'a';
         }
     }
     return result;
@@ -46,10 +46,10 @@ int main() {
     printf("Zadejte posun: ");
     scanf("%i", &shift);
 
-    enc_str = shift_by(inp_str, shift);
+    enc_str = strshift(inp_str, shift);
     printf("\n%s", enc_str);
 
-    dec_str = shift_by(enc_str, -shift);
+    dec_str = strshift(enc_str, -shift);
     printf("\n%s", dec_str);
 
     pause();
