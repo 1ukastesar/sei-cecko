@@ -8,7 +8,7 @@
 #define STR_MAX_LEN 100+1
 
 char * shift_by(char message[], int shift) {
-    char result[STR_MAX_LEN];
+    char result[STR_MAX_LEN] = "";
     int i;
 
     for (i = 0; message[i] != '\0'; i++) 
@@ -23,14 +23,14 @@ char * shift_by(char message[], int shift) {
             result[i] = (message[i] + shift - 'a') % 26 + 'a';
         }
     }
-    return *result;
+    return result;
 }
 
 int main() {
     
-    char inp_str[STR_MAX_LEN],
-         enc_str[STR_MAX_LEN],
-         dec_str[STR_MAX_LEN];
+    char inp_str[STR_MAX_LEN] = "",
+         enc_str[STR_MAX_LEN] = "",
+         dec_str[STR_MAX_LEN] = "";
 
     int shift;
 
