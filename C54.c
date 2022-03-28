@@ -16,33 +16,36 @@ int find_tallest(Student students[]);
 
 int main() {
     
-    int id;
+    int i;
     Student students[STUDENT_COUNT];
 
-    for(id = 1; id <= STUDENT_COUNT; id++) {
-        students[id].id = id;
+    for(i = 0; i < STUDENT_COUNT; i++) {
 
-        printf("Zadejte parametry studenta s ID %i: \n", id);
+        printf("\nZadejte parametry %i. studenta: \n", i + 1);
+        printf("ID: ");
+        scanf("%i", &students[i].id);
         printf("Jmeno: ");
-        scanf("%s", &students[id].name);
-        printf("Vyska: ");
-        scanf("%f", &students[id].height);
+        scanf("%s", &students[i].name);
+        printf("Vyska (v metrech): ");
+        scanf("%f", &students[i].height);
     }
 
-    int tallest_id = find_tallest(students);
+    int tallest_student = find_tallest(students);
     printf("\n");
-    printf("Nejvyssi student ma ID %i a jmenuje se %s.", tallest_id, students[tallest_id].name);
+    printf("Nejvyssi student s ID %i ma %g m a jmenuje se %s.", students[tallest_student].id, 
+                                                                students[tallest_student].height, 
+                                                                students[tallest_student].name);
 
     pause();
 }
 
 int find_tallest(Student students[]) {
-    int id;
-    int tallest_id = 1;
-    for (id = 1; id <= STUDENT_COUNT; id++) {
-        if(students[id].height > students[tallest_id].height) {
-            tallest_id = id;
+    int i;
+    int max_height = 0;
+    for (i = 0; i < STUDENT_COUNT; i++) {
+        if(students[i].height > students[max_height].height) {
+            max_height = i;
         }
     }
-    return tallest_id;
+    return max_height;
 }
