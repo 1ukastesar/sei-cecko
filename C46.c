@@ -7,10 +7,7 @@
 
 #define STR_MAX_LEN 100+1
 
-char * strshift(char string[], int shift) {
-    char * result;
-    result = malloc(STR_MAX_LEN);
-
+void strshift(char string[], char * result, int shift) {
     int i;
 
     for (i = 0; string[i] != '\0'; i++) 
@@ -18,21 +15,22 @@ char * strshift(char string[], int shift) {
 
         if (isupper(string[i]))
         {
-            result[i] = (string[i] + shift - 'a') % 26 + 'a';
+            result[i] = ((string[i] + shift - 'A') % 26) + 'A';
         }
         else if (islower(string[i]))
         {
-            result[i] = (string[i] + shift - 'a') % 26 + 'a';
+            result[i] = ((string[i] + shift - 'a') % 26) + 'a';
         }
+        else
+            result[i] = string[i];
     }
-    return result;
 }
 
 int main() {
     
-    char inp_str[STR_MAX_LEN] = "";
-    char * enc_str,
-         * dec_str;
+    char inp_str[STR_MAX_LEN];
+    char enc_str[STR_MAX_LEN] = "";
+    char dec_str[STR_MAX_LEN] = "";
 
     int shift;
 
@@ -46,11 +44,13 @@ int main() {
     printf("Zadejte posun: ");
     scanf("%i", &shift);
 
-    enc_str = strshift(inp_str, shift);
-    printf("\n%s", enc_str);
+    printf("\n");
+    strshift(inp_str, enc_str, shift);
+    printf("Zasifrovana zprava: %s", enc_str);
 
-    dec_str = strshift(enc_str, -shift);
-    printf("\n%s", dec_str);
+    printf("\n");
+    strshift(enc_str, dec_str, -shift);
+    printf("Rozsifrovana zprava: %s", dec_str);
 
     pause();
 }
