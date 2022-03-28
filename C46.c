@@ -46,11 +46,11 @@ int main() {
     printf("Zadejte posun: ");
     scanf("%i", &shift);
 
-    // enc_str = shift_by(inp_str, shift);
-    printf("\n%s", shift_by(inp_str, shift));
+    enc_str = shift_by(inp_str, shift);
+    printf("\n%s", enc_str);
 
-    // dec_str = shift_by(enc_str, 0 - shift);
-    // printf("\n%s", dec_str);
+    dec_str = shift_by(enc_str, -shift);
+    printf("\n%s", dec_str);
 
     pause();
 }
