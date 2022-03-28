@@ -10,6 +10,9 @@
 void strshift(char string[], char * result, int shift) {
     int i;
 
+    if(shift < 0)
+        shift = 26 + (shift % 26);
+
     for (i = 0; string[i] != '\0'; i++) 
     {
 
