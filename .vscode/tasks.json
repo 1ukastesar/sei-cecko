@@ -45,7 +45,7 @@
             "group": {
                 "kind": "test",
                 "isDefault": true
-            },
+            }
         },
         {
             "type": "shell",
