@@ -49,7 +49,7 @@ int main() {
 
     printf("\n");
     strshift(inp_str, enc_str, shift);
-    printf("Zasifrovana zprava: %s", enc_str);
+    printf("Zasifrovana zprava:  %s", enc_str);
 
     printf("\n");
     strshift(enc_str, dec_str, -shift);
