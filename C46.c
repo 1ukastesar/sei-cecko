@@ -7,39 +7,24 @@
 
 #define STR_MAX_LEN 100+1
 
-// char shift_str(char message[], int shift) {
-//     char current[2];
-//     for (int i = 0; message[i] != EOF; i++)
-//     {
-//         current = message[i];
-//         current += shift;
-//         if(current > 'z')
-//             current -= 26;
-//         message[i] = current;
-//     }
-//     return *message;
-// }
-
-char shift_by(char message[], int shift) {
+char * shift_by(char message[], int shift) {
     char result[STR_MAX_LEN];
-    char current[1+1];
     int i;
 
     for (i = 0; message[i] != '\0'; i++) 
     {
-        current = message[i];
-        if (isupper(current))
+
+        if (isupper(message[i]))
         {
-            result[i] = (current + shift - 'A' % 26) + 'A';
+            result[i] = (message[i] + shift - 'a') % 26 + 'a';
         }
-        else if (islower(current))
+        else if (islower(message[i]))
         {
-            result[i] = (current + shift - 'a' % 26) + 'a';
+            result[i] = (message[i] + shift - 'a') % 26 + 'a';
         }
     }
-    return result;
+    return *result;
 }
-
 
 int main() {
     
@@ -57,13 +42,13 @@ int main() {
     inp_str[strcspn(inp_str, "\n")] = 0;
 
     printf("Zadejte posun: ");
-    scanf("%i", shift);
+    scanf("%i", &shift);
 
-    enc_str = shift_by(inp_str, shift);
-    printf("\n%s", enc_str);
+    // enc_str = shift_by(inp_str, shift);
+    printf("\n%s", shift_by(inp_str, shift));
 
-    dec_str = shift_by(enc_str, 0 - shift);
-    printf("\n%s", dec_str);
+    // dec_str = shift_by(enc_str, 0 - shift);
+    // printf("\n%s", dec_str);
 
     pause();
 }
