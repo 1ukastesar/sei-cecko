@@ -8,7 +8,9 @@
 #define STR_MAX_LEN 100+1
 
 char * shift_by(char message[], int shift) {
-    char result[STR_MAX_LEN] = "";
+    char * result;
+    result = malloc(STR_MAX_LEN);
+
     int i;
 
     for (i = 0; message[i] != '\0'; i++) 
@@ -28,9 +30,9 @@ char * shift_by(char message[], int shift) {
 
 int main() {
     
-    char inp_str[STR_MAX_LEN] = "",
-         enc_str[STR_MAX_LEN] = "",
-         dec_str[STR_MAX_LEN] = "";
+    char inp_str[STR_MAX_LEN] = "";
+    char * enc_str,
+         * dec_str;
 
     int shift;
 
