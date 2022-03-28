@@ -29,8 +29,14 @@ int main() {
     for(int i = 0; str[i] != '\0'; i++) {
         if (strchr(samohlaska, str[i]))
             samohlasky++;
-        else if (strchr(souhlaska, str[i]))
+        else if (strchr(souhlaska, str[i])) {
             souhlasky++;
+            if(str[i] == 'h' || str[i] == 'H') {
+                if(str[i-1] == 'c' || str[i-1] == 'C') {
+                    souhlasky--;
+                }
+            }
+        }
         else if (strchr(cislo, str[i]))
             cislice++;
         else
