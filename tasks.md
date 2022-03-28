@@ -54,7 +54,7 @@
 52. Zjistěte, zda je v poli a o velikosti 5x5, jehož prvky na plníte celými čísly z klávesnice, součet prvků nad hlavní diagonálou větší, než součet prvků pod hlavní diagonálou.
 53. Napište program, který provede sečtení dvou komplexních čísel. Využijte typ struct.
 54. Vstup: Identifikační čísla 3 studentů (přirozená čísla), za každým identikačním číslem je uvedena výška studenta v metrech (počet desetinných míst je maximálně 2). Výstup: Jméno nejvyššího studenta s uvedením jeho výšky.
-55. Napište program, který na monitor vypíše id a plat zamestnance s nejvyšším platem. Využijte typ struct a pole. Do něj vložte z klávesnice informace o pěti zaměstnancích (vždy postupně zadávejte id zaměstnanace a za ním jeho plat).
+55. Napište program, který na monitor vypíše id a plat zamestnance s nejvyšším platem. Využijte typ struct a pole. Do něj vložte z klávesnice informace o pěti zaměstnancích (vždy postupně zadávejte id zaměstnance a za ním jeho plat).
 56. Na vstupu z klávesnice je dáno přirozené číslo n a za ním n celých čísel. Seřaďte čísla vzestupně podle velikosti metodou vsouvání a setříděná zobrazte na monitor.
 57. Na vstupu z klávesnice je dáno přirozené číslo n a za ním n celých čísel. Seřaďte čísla vzestupně podle velikosti metodou postupného výběru minima a setříděná zobrazte na monitor.
 58. Na vstupu z klávesnice je dáno přirozené číslo n a za ním n celých čísel. Seřaďte čísla vzestupně podle velikosti metodou Bubble Sort a setříděná zobrazte na monitor.
