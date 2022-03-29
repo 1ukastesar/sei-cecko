@@ -51,9 +51,9 @@ int main() {
     } while(c != EOF);
 
     // Nasledne vypisu pocet slov, novych radek a znaku
-    printf("Slova: %i\n\n", wordcount);
-    printf("Radky: %i", rows);
-    printf("Znaky: %i", chars);
+    printf("\nSlova: %i", wordcount);
+    printf("\nRadky: %i", rows);
+    printf("\nZnaky: %i", chars);
 
     // a provedu cistici prace (zavru soubor).
     fclose(fr);
