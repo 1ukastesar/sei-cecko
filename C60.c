@@ -2,39 +2,37 @@
 #include<stdlib.h>
 
 #include "pause.c"
+#include "list.c"
 
-int main() {
-    
-    int v, n;
-    int found = 0;
-    int i;
+int sequentialSearch(int needle, int * haystack, int length) {
 
-    printf("Zadejte vzor: ");
-    scanf("%i", &v);
-
-    printf("Zadejte pocet cisel: ");
-    scanf("%i", &n);
-    int a[n];
-
-    printf("Zadejte radu cisel: \n");
-    for(i = 0; i < n; i++) {
-        scanf("%i", &a[i]);
-    }
-
-    printf("\n");
-
-    for(i = 0; i < n; i++) {
-        if(a[i] == v) {
-            found = i;
-            break;
+    for(int i = 0; i < length; i++) {
+        if(needle == haystack[i]) {
+            return i;
         }
     }
 
-    if(found != 0) {
+    return -1;
+}
+
+int main() {
+    
+    int pattern;
+
+    printf("V = ");
+    scanf("%i", &pattern);
+
+    int n = askHowMany();
+    int list[n];
+    
+    loadNumbers(n, list);
+    int found = sequentialSearch(pattern, list, count(list));
+
+    if(found > -1) {
         printf("Prvek nalezen na %i. pozici (index %i).", found + 1, found);
     } else {
         printf("Prvek nenalezen.");
-    }    
+    }
 
     pause();
 }
