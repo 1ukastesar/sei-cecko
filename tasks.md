@@ -86,3 +86,14 @@ c[1][0] = a[1][0]*b[0][0] + a[1][1]*b[1][0] + a[1][2]*b[2][0]
                   2 3 4 * 2 2 2 = 20 20 20
                   3 4 5   3 3 3   26 26 26
 ```
+
+64.	Vytvořte třídu Vozidlo, která bude obsahovat dva atributy pocetKol (int) a maxRychlost (float). Dále bude obsahovat tři metody int getPocetKol(), float getMaxRychlost() a konstruktor Vozidlo(int k, float r), který naplní hodnotami, které zadá uživatel z klávesnice, atributy třídy.
+Vytvořte objekty trabant, ferrari a bicykl a na monitor vypište jejich počet kol a maximální rychlost.
+65.	Vytvořte třídu Zlomek, která bude mít dva atributy Citatel (int) a Jmenovatel(int) a tři konstruktory, které budou nastavovat čitatele i jmenovatele zlomku různými způsoby:
+    1. buď bude čitatel napevno nastaven na hodnotu 2 a  jmenovatel na hodnotu 6 
+    2. nebo uživatel zadá libovolný čitatel a jmenovatel bude napevno nastaven na hodnotu 2 
+    3. nebo uživatel zadá libovolnou hodnotu čitatele i jmenovatele.
+    
+    Vytvořte 3 zlomky (tedy 3 objekty), každý s jiným konstruktorem, a zobrazte je na monitor.
+    
+66.	Vytvorte třídu Zdravice, která bude mít jeden atribut text(string) reprezentující text pozdravu a jednu metodu string pozdrav(string), na jejímž vstupu bude jméno člověka, kterého chceme pozdravit. Na monitor zobrazte text pozdravu se jménem, např. Ahoj Petře.
