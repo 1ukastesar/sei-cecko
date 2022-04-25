@@ -8,10 +8,12 @@ using namespace std;
 class Zlomek {
 
     private:
+    
+
+    public:
     int Citatel;
     int Jmenovatel;
 
-    public:
     Zlomek() {
         Citatel = 2;
         Jmenovatel = 6;
@@ -25,14 +27,6 @@ class Zlomek {
         Citatel = c;
         Jmenovatel = j;
     }
-
-   int getCitatel() {
-       return Citatel;
-   }
-
-   int getJmenovatel() {
-       return Jmenovatel;
-   }
 };
 
 int main() {
@@ -43,9 +37,9 @@ int main() {
     Zlomek z2(5);
     Zlomek z3(4, 9);
 
-    cout << z1.getCitatel() << slash << z1.getJmenovatel() << endl;
-    cout << z2.getCitatel() << slash << z2.getJmenovatel() << endl;
-    cout << z3.getCitatel() << slash << z3.getJmenovatel() << endl;
+    cout << z1.Citatel << slash << z1.Jmenovatel << endl;
+    cout << z2.Citatel << slash << z2.Jmenovatel << endl;
+    cout << z3.Citatel << slash << z3.Jmenovatel << endl;
 
     pause();
 }
