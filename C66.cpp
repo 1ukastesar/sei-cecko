@@ -8,18 +8,30 @@ using namespace std;
 class Zdravice {
 
     private:
-    string text = "Ahoj, ";
+    string textPozdravu;
 
     public:
-    void pozdrav(string jmeno) {
-        cout << text << jmeno;
+    void nastavPozdrav(string text) {
+        textPozdravu = text;
+    }
+
+    string pozdrav(string jmeno) {
+        // cout << text << jmeno;
+        return textPozdravu + " " + jmeno + "!\n";
     }
 };
 
 int main() {
     
     Zdravice zdravice;
-    zdravice.pozdrav("Petre");
+
+    zdravice.nastavPozdrav("Ahoj");
+    cout << zdravice.pozdrav("Petre");
+    cout << zdravice.pozdrav("Karle");
+
+    zdravice.nastavPozdrav("Ahoj programatori");
+    cout << zdravice.pozdrav("Karle");
+    cout << zdravice.pozdrav("Petre");
 
     pause();
 }
